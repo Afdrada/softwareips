@@ -10,7 +10,13 @@ package interfaz;
  * @author Andres
  */
 public class Principal extends javax.swing.JFrame {
-  int a = 0;
+  
+    int a = 0;
+    int j = 0;
+    int u = 0;
+    int r = 0;
+    int e = 0;
+    
     /**
      * Creates new form Principal
      */
