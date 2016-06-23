@@ -173,8 +173,7 @@ try {
               
       	 new Principal().setVisible(true);
       
-              
-            }
+             }
         });
     }
 
