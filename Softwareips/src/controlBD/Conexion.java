@@ -22,18 +22,20 @@ public class Conexion {
    static ResultSet resultado, rst;
    static Statement sentencia;
    static String bd = "mbet";
-   static String Loggin= "root";
+   static String Loggin= "postgres";
    static String Pass="drada123456";
-   static String url="jdbc:postgresql://localhost:5432/postgres";
+   static String url="jdbc:postgresql://localhost:5432/mbet";
  
    
    public void conexionBD() throws SQLException{
        try {
            Class.forName("org.postgresql.Driver");
            conexion = DriverManager.getConnection(url, Loggin, Pass);
-           if (conexion !=null){
+          if (conexion !=null){
                System.out.println("conexion establecida con la bd"+ bd);
            }
+           
+           
        } catch (ClassNotFoundException ex) {
            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
        }
